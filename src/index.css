@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-3000px, 0, 0);
+  transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: translate3d(25px, 0, 0);
+  transform: translate3d(25px, 0, 0);
+  }
+  75% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
+  }
+  100% {
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-3000px, 0, 0);
+  transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: translate3d(25px, 0, 0);
+  transform: translate3d(25px, 0, 0);
+  }
+  75% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
+  }
+  100% {
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+  .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+  
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section_margin {
+    margin: 4rem;
+  }
+  .section_padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section_margin {
+    margin: 4rem 2rem;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 
+.nestedNavbar div{
+  height: 50px;
+  line-height: 50px;
+  color: black; 
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:100px;
+  z-index: 100;
+  left: -50%;
+  max-width: max-content;
+  
+} */
+
+
+
+.nestedNavbar{
+  display: none;
+  
+  /* max-width: max-content; */
+  /* position: relative;; */
+}
+
+
+.mainli:hover > ul{
+  display: block;
+}
+
+
+
+.mainli{
+position: relative;
+/* display: flex;
+justify-content: center;
+align-items: center;
+ */
+
+}
